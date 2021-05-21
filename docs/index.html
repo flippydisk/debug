@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: src\index.js
+	@page @flippydisk/tools
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>@flippydisk/tools  - @flippydisk/tools</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+		<link rel="stylesheet" type="text/css" href="./dist/bundles/static.css">
+	
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="static/html5shiv.js"></script>
+	<!--<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		<nav class="container">
+
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">@flippydisk/tools</a>
+			</div>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="http://bitovi.com">Bitovi.com</a></li>
+						<li><a href="http://bitovi.com/blog/">Blog</a></li>
+						<li><a href="http://bitovi.com/design/">Design</a></li>
+						<li><a href="http://bitovi.com/development/">Development</a></li>
+						<li><a href="http://bitovi.com/training/">Training</a></li>
+						<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+						<li><a href="http://bitovi.com/people/">People</a></li>
+						<li><a href="http://bitovi.com/contact/">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping"> 
+	
+		
+		
+			
+			<li class="search-container active">
+			<a class="sidebar-title" href="index.html" data-search="@flippydisk/tools">
+				@flippydisk/tools
+			</a>
+			
+	<ul>
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="page" href="Debug.html" data-search="Debug">
+						Debug
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="page" href="Disable.html" data-search="Disable">
+						Disable
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="module" href="error.html" data-search="error">
+						error
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="page" href="Lang.html" data-search="Lang">
+						Lang
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="page" href="Tests.html" data-search="Tests">
+						Tests
+					</a>
+				</li>
+				
+			
+			
+		
+	</ul>
+
+		</li>
+			
+		
+	
+</ul>
+	</nav>
+	
+	
+	
+	<article class="content docs">
+	
+	
+		
+		<section class="title">
+			<div class="heading">
+<h1>@flippydisk/tools</h1>
+	<ul class="tags">
+		<li>page</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+	
+</ul>
+<br />
+		</section>
+		
+		
+		
+		<section class="contents">
+		</section>
+		
+		
+		
+
+		
+
+		
+			
+		
+		
+		
+		
+
+		
+		<section class="comment">
+			<h2>Overview</h2>
+<p>Flippydisk tools are designed to help front end developers build projects with a few of the general necessities that
+are extremely helpful in the process. Debugging, graceful error messages, url search tools, ES6 Ajax calls, and
+similar items are what this suite focuses on. <code>1.0.0</code> will include a debugger, error logger and the ability to
+disable an entire script from a URL param. More features will be added in future versions.</p>
+<p>Basically, I kept finding myself needing these items over and over again, project after project. So much so that I
+finally decided to put them all together in a suite that can be imported via NPM.</p>
+<h2>Installation</h2>
+<p>In your project's directory:</p>
+<pre><code>npm i @flippydisk/tools --save-dev
+</code></pre>
+<p>That's it! Once you have it installed in your project, see individual component's README files for their own use.</p>
+<p>Ex. <code>Debug</code>:</p>
+<pre><code>import * as tools from '@flippydisk/tools';
+const debug = new tools.Debug({ debug: false, control: 'MyControl' });
+</code></pre>
+<h2>Tests</h2>
+<p>Each component will have its own tests which will also run as a full Flippydisk tools test suite.</p>
+<pre><code>npm test
+</code></pre>
+<h3>Output:</h3>
+<pre><code>$ npm run test
+
+&gt; @flippydisk/tools@1.0.0 test
+&gt; cross-env npm run lint &amp;&amp; jest --coverage
+
+&gt; @flippydisk/tools@1.0.0 lint
+&gt; cross-env eslint ./src/**/*.js
+
+ PASS  src/error/error.spec.js
+ PASS  src/disable/disable.spec.js
+ PASS  src/debug/debug.spec.js
+ PASS  src/lang/index.spec.js
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |   97.28 |    90.21 |     100 |   97.67 |
+ src                   |       0 |        0 |       0 |       0 |
+  index.js             |       0 |        0 |       0 |       0 |
+ src/debug             |   98.18 |    90.91 |     100 |     100 |
+  index.js             |   98.18 |    90.91 |     100 |     100 | 17-40,43,66,81
+ src/disable           |   90.32 |       75 |     100 |      90 |
+  index.js             |   90.32 |       75 |     100 |      90 | 81-83
+ src/error             |     100 |       75 |     100 |     100 |
+  index.js             |     100 |       75 |     100 |     100 | 11-12
+ src/lang              |     100 |    96.67 |     100 |     100 |
+  filterHTMLTags.js    |     100 |      100 |     100 |     100 |
+  getPropertySafely.js |     100 |    93.75 |     100 |     100 | 34
+  getStringSafely.js   |     100 |      100 |     100 |     100 |
+  index.js             |       0 |        0 |       0 |       0 |
+  isEmptyObject.js     |     100 |    91.67 |     100 |     100 | 13
+  isEmptyString.js     |     100 |      100 |     100 |     100 |
+  isNull.js            |     100 |      100 |     100 |     100 |
+  isNullish.js         |     100 |      100 |     100 |     100 |
+  isNumber.js          |     100 |      100 |     100 |     100 |
+  isObject.js          |     100 |      100 |     100 |     100 |
+  isStringy.js         |     100 |      100 |     100 |     100 |
+  isType.js            |     100 |      100 |     100 |     100 |
+  isUndefined.js       |     100 |      100 |     100 |     100 |
+  isValidObject.js     |     100 |      100 |     100 |     100 |
+ src/tests             |     100 |      100 |     100 |     100 |
+  index.js             |     100 |      100 |     100 |     100 |
+-----------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 4 passed, 4 total
+Tests:       47 passed, 47 total
+Snapshots:   0 total
+Time:        3.984 s
+Ran all test suites.
+</code></pre>
+<h2>Documentation</h2>
+<p>Each component will also have its own README file.</p>
+<ul>
+<li>https://docs.flippydisk.com</li>
+<li>Read them on Github: https://github.com/flippydisk/tools</li>
+<li>In any editor capable of reading .md files</li>
+<li>Build them from this project: <code>npm run docs</code></li>
+</ul>
+
+		</section>
+		
+		
+
+		
+
+		
+	
+	
+	</article>
+	
+	
+
+</div>
+
+
+
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand donejs" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"type":"page","name":"@flippydisk/tools","src":"src\\index.js","description":"","codeLine":3,"dest":"C:\\www\\projects\\Flippy\\tools\\docs","glob":{"pattern":"**/*.{js,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"C:\\www\\projects\\Flippy\\tools"},"generators":["html"],"page":"docs","docConfigDest":"../documentjs.json","project":{}};
+	</script>
+
+	
+		<script>
+			steal = {
+				instantiated: {
+					"bundles/static.css!$css" : null
+				}
+			};
+		</script>
+		<script type="text/javascript"
+				data-main="static"
+				src="./dist/steal.production.js">
+		</script>
+	
+</body>
+</html>

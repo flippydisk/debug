@@ -35,6 +35,5 @@ node_modules/
 
 # build / generated output
 api/
-dist/
-docs/
+./dist/
 lib/
