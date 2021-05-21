@@ -1,0 +1,14 @@
+{
+    "sites": {
+        "docs": {
+			"dest": "docs",
+            "parent": "@flippydisk/tools",
+			"pageConfig": {
+				"page": "docs"
+			},
+			"glob": {
+				"pattern": "**/*.{js,md}"
+			}
+		}
+	}
+}
