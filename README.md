@@ -92,7 +92,7 @@ Ran all test suites.
 
 ## Documentation
 Each component will also have its own README file.
-- https://docs.flippydisk.com
-- Read them on Github: https://github.com/flippydisk/tools
+- [https://flippydisk.github.io/tools](https://flippydisk.github.io/tools)
+- README files on Github: [https://github.com/flippydisk/tools](https://github.com/flippydisk/tools)
 - In any editor capable of reading .md files
 - Build them from this project: `npm run docs`
