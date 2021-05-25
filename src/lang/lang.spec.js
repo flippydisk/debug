@@ -1,5 +1,5 @@
 import * as Tests from '../tests';
-import * as Lang from './index';
+import * as Lang from './lang';
 
 const allItems = {
     function: [

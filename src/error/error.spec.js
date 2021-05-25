@@ -1,4 +1,4 @@
-import * as Errors from './index';
+import * as Errors from './error';
 import * as Tests from '../tests';
 
 const allItems = {

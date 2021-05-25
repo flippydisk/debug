@@ -4,7 +4,7 @@
  * @description a clean, optionally logged, error utilizing the Debug feature.
  * @parent @flippydisk/tools
  */
-import Debug from '../debug';
+import Debug from '../debug/debug';
 
 const debug = new Debug({ debug: false, control: 'Error' });
 

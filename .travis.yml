@@ -6,5 +6,4 @@ before_install:
 install:
     - "npm i"
 script:
-    - "npm run docs"
-    - "npm run build"
+    - "npm run build:production"
