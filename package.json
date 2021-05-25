@@ -22,6 +22,8 @@
   },
   "main": "lib/index.js",
   "files": [
+    "docs",
+    "lib",
     "src"
   ],
   "keywords": [
