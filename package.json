@@ -8,7 +8,6 @@
     "url": "git+https://github.com/flippydisk/tools.git"
   },
   "author": "Jim O'Harra-Sutton (https://www.flippydisk.com)",
-  "private": true,
   "scripts": {
     "lint": "cross-env eslint ./src/**/*.js",
     "test": "cross-env npm run lint && jest --coverage",
