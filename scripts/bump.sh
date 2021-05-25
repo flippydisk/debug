@@ -39,7 +39,6 @@ fi
 echo "checking for upstream updates..."
 git fetch upstream
 git pull upstream main
-npm run build:production
 
 # Check the first command line arg against the 'valid' array, set the answer to 'version'
 containsElement $1 "${valid[@]}"
