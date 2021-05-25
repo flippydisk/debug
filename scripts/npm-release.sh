@@ -4,5 +4,5 @@ npm cache clean --force
 echo "Setting NPM registry..."
 npm config set registry https://registry.npmjs.org/
 echo "Publishing package..."
-npm publish
+npm publish --access public
 echo "Done. Check for errors above!"

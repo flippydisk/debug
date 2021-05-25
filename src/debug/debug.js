@@ -58,7 +58,11 @@ export default class Debug {
      */
     config() {
         const hasControl = this.options.control !== '';
-        const decodeSearch = new URLSearchParams(window.location.search);
+        const decodeSearch = new URLSearchParams(window?.location?.search);
+        if (!decodeSearch) {
+            this.error('Debug config(): could not find window.location.search:', decodeSearch);
+            return false;
+        }
         const findDebugs = decodeSearch.getAll(this.options.param);
         const isDebug = decodeSearch.has(this.options.param);
         const allInUrl = hasControl && isDebug && this.find(findDebugs, this.options.debugAll);

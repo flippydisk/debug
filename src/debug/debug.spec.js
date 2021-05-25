@@ -1,5 +1,5 @@
 import * as Tests from '../tests';
-import Debug from './index';
+import Debug from './debug';
 
 /* eslint-disable no-console */
 jsdom.reconfigure({

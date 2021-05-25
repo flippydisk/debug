@@ -5,7 +5,7 @@
  * @parent @flippydisk/tools
  */
 
-import Debug from '../debug';
+import Debug from '../debug/debug';
 import isEmptyString from '../lang/isEmptyString';
 
 export default class Disable {

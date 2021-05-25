@@ -1,65 +1,73 @@
 {
-	"name": "@flippydisk/tools",
-	"version": "1.0.0",
-	"description": "A set of JS utilities to help with web development",
-	"homepage": "https://www.flipppydisk.com",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/flippydisk/tools.git"
-	},
-	"author": {
-		"name": "Jim O'Harra-Sutton",
-		"url": "https://www.flippydisk.com"
-	},
-	"private": true,
-	"scripts": {
-		"lint": "cross-env eslint ./src/**/*.js",
-		"test": "cross-env npm run lint && jest --coverage",
-		"test:watch": "cross-env npm run lint && jest --watch --coverage",
-		"build": "cross-env npm run test && cross-env babel --ignore src/**/*.spec.js -d lib/ src/",
-		"docs": "cross-env documentjs",
-        "docs:watch": "cross-env documentjs --watch"
-	},
-	"main": "lib/index.js",
-	"files": [
-		"src"
-	],
-	"keywords": [
-        "flippydisk",
-        "tools",
-        "web tools",
-        "debug",
-		"debugger",
-		"debugging",
-		"log",
-		"logger",
-		"logging",
-		"console"
-	],
-	"dependencies": {
-		"core-js": "^3.12.1",
-		"jsdom": "^16.5.3"
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.14.3",
-		"@babel/core": "^7.14.3",
-		"@babel/eslint-parser": "^7.14.3",
-		"@babel/plugin-proposal-class-properties": "^7.13.0",
-		"@babel/plugin-proposal-object-rest-spread": "^7.14.2",
-		"@babel/preset-env": "^7.14.2",
-		"cross-env": "^7.0.3",
-		"documentjs": "^0.5.5",
-		"eslint": "^7.26.0",
-		"eslint-config-airbnb-base": "^14.2.1",
-		"eslint-import-resolver-alias": "^1.1.2",
-		"eslint-loader": "^4.0.2",
-		"eslint-plugin-babel": "^5.3.1",
-		"eslint-plugin-import": "^2.23.2",
-		"eslint-plugin-jest": "^24.3.6",
-		"jest": "^26.6.3",
-		"jest-environment-jsdom": "^26.6.2",
-		"jest-environment-jsdom-global": "^2.0.4",
-		"jest-raw-loader": "^1.0.1"
-	},
-	"license": "MIT"
+  "name": "@flippydisk/tools",
+  "version": "1.0.0",
+  "description": "A set of JS utilities to help with web development",
+  "homepage": "https://www.flipppydisk.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flippydisk/tools.git"
+  },
+  "author": "Jim O'Harra-Sutton (https://www.flippydisk.com)",
+  "private": true,
+  "scripts": {
+    "lint": "cross-env eslint ./src/**/*.js",
+    "test": "cross-env npm run lint && jest --coverage",
+    "test:watch": "cross-env npm run lint && jest --watch --coverage",
+    "build": "cross-env npm run test && cross-env babel --ignore src/**/*.spec.js -d lib/ src/",
+    "build:production": "cross-env npm run test && cross-env npm run docs && cross-env babel --ignore src/**/*.spec.js -d lib/ src/",
+    "docs": "cross-env documentjs",
+    "docs:watch": "cross-env documentjs --watch",
+    "update": "cross-env ./scripts/update.sh",
+    "release": "cross-env ./scripts/npm-release.sh",
+    "bump": "cross-env ./scripts/bump.sh"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "flippydisk",
+    "tools",
+    "web tools",
+    "debug",
+    "debugger",
+    "debugging",
+    "log",
+    "logger",
+    "logging",
+    "console"
+  ],
+  "dependencies": {
+    "core-js": "^3.12.1",
+    "jsdom": "^16.5.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "cross-env": "^7.0.3",
+    "documentjs": "^0.5.5",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^26.6.3",
+    "jest-environment-jsdom": "^26.6.2",
+    "jest-environment-jsdom-global": "^2.0.4",
+    "jest-raw-loader": "^1.0.1"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flippydisk/tools/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  }
 }

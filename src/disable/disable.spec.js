@@ -1,5 +1,5 @@
 import * as Tests from '../tests';
-import Disable from './index';
+import Disable from './disable';
 
 jsdom.reconfigure({
     url: 'https://www.flippydisk.com/?one=true&disable=DisableTest&more=false',
