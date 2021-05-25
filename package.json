@@ -1,6 +1,6 @@
 {
   "name": "@flippydisk/tools",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A set of JS utilities to help with web development",
   "homepage": "https://www.flipppydisk.com",
   "repository": {
@@ -8,7 +8,6 @@
     "url": "git+https://github.com/flippydisk/tools.git"
   },
   "author": "Jim O'Harra-Sutton (https://www.flippydisk.com)",
-  "private": true,
   "scripts": {
     "lint": "cross-env eslint ./src/**/*.js",
     "test": "cross-env npm run lint && jest --coverage",
