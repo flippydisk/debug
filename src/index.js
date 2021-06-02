@@ -2,7 +2,9 @@
  * @page @flippydisk/tools
  */
 import Debug from './debug/debug';
-import error from './error/error';
+import Disable from './disable/disable';
+import * as Json from './json/json';
 import * as Lang from './lang/lang';
+import * as Tests from './tests/tests';
 
-export { Debug, error, Lang };
+export { Debug, Disable, Json, Lang, Tests };

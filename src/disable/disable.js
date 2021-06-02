@@ -8,6 +8,8 @@
 import Debug from '../debug/debug';
 import isEmptyString from '../lang/isEmptyString';
 
+const debug = new Debug({ debug: false, control: 'Disable' });
+
 export default class Disable {
     param = 'disable';
 
@@ -25,7 +27,6 @@ export default class Disable {
      * @param properties.control {String} Name given to this calling script so it can be used as a URL param
      */
     constructor(properties = {}) {
-        this.debug = new Debug({ debug: false, control: 'Disable' });
         const hasControl = !isEmptyString(properties.control);
         const isDisabledOnLoad = (
             properties.disable !== undefined
@@ -53,7 +54,7 @@ export default class Disable {
      * @return {Boolean} True or False if it's matched the param
      */
     find(findDisabled, param) {
-        this.debug.log('find:', 'Looking for', param, 'in', findDisabled);
+        debug.log('find:', 'Looking for', param, 'in', findDisabled);
         return findDisabled.some(v => v === param);
     }
 
@@ -68,19 +69,19 @@ export default class Disable {
      */
     setStatus(properties, inUrl, hasControl) {
         if (this.disabled) {
-            this.debug.info(this.fileMode, properties.control);
+            debug.info(this.fileMode, properties.control);
             return true;
         }
 
         if (!properties.disable && inUrl) {
             this.disabled = true;
-            this.debug.info(this.urlMode, properties.control);
+            debug.info(this.urlMode, properties.control);
             return true;
         }
 
         if (properties.disable && hasControl) {
             this.disabled = true;
-            this.debug.info(this.fileMode, properties.control);
+            debug.info(this.fileMode, properties.control);
             return true;
         }
 
@@ -94,7 +95,7 @@ export default class Disable {
      * @return {Boolean} Returns this.options.disabled
      */
     isDisabled() {
-        this.debug.log('isDisabled:', this.disabled);
+        debug.log('isDisabled:', this.disabled);
         return this.disabled;
     }
 }

@@ -26,7 +26,7 @@ However, if you run into any issues, or simply want a "main" branch version, you
 
 Once it's in your project, simply Import the `Disabled` class from @flippydisk/tools.
 
-`import * as tools from '@flippydisk/tools';`
+`import * as Tools from '@flippydisk/tools';`
 
 Add a local instance of `Disabled` to your component by passing `Disabled()` an object
 containing the default value of `disabled` and a `control` name.

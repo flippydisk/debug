@@ -7,7 +7,7 @@
 				"page": "docs"
 			},
 			"glob": {
-				"pattern": "**/*.{js,md}"
+                "pattern": "**/*.{js,md}"
 			}
 		}
 	}

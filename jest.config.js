@@ -1,6 +1,7 @@
 module.exports = {
     collectCoverageFrom: [
         '!**/__tests__/**',
+        '!**/*.mocks.js',
         'src/**/*.js'
     ],
     moduleNameMapper: {
@@ -19,10 +20,14 @@ module.exports = {
         '<rootDir>/spec/tests.config.js'
     ],
     testEnvironment: 'jest-environment-jsdom-global',
-    testMatch: ['**/__tests__/**/*.spec|test.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+    testMatch: ['**/__tests__/**/*.spec|test.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)',],
     transform: {
         '^.+\\.html$': 'jest-raw-loader',
         '^.+\\.jsx?$': 'babel-jest'
     },
-    testURL: 'http://localhost/'
+    testURL: 'http://localhost/',
+    automock: false,
+    setupFiles: [
+        './spec/fetchMock.js'
+    ]
 };

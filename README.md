@@ -1,7 +1,7 @@
 @page @flippydisk/tools
 @group Debug 0 Debug
 @group Disable 1 Disable
-@group error 2 error
+@group Json 2 Json
 @group Lang 3 Lang
 @group Tests 4 Tests
 
@@ -42,34 +42,35 @@ npm test
 ```
 $ npm run test
 
-> @flippydisk/tools@1.0.0 test
-> cross-env npm run lint && jest --coverage
-
-> @flippydisk/tools@1.0.0 lint
+> @flippydisk/tools@0.0.4 lint
 > cross-env eslint ./src/**/*.js
 
- PASS  src/error/error.spec.js
- PASS  src/disable/disable.spec.js
+ PASS  src/tests/tests.spec.js
  PASS  src/debug/debug.spec.js
- PASS  src/lang/index.spec.js
+ PASS  src/disable/disable.spec.js
+ PASS  src/json/json.spec.js
+ PASS  src/lang/lang.spec.js
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   97.28 |    90.21 |     100 |   97.67 |
+All files              |   94.95 |    90.18 |   95.24 |   95.45 |
  src                   |       0 |        0 |       0 |       0 |
   index.js             |       0 |        0 |       0 |       0 |
- src/debug             |   98.18 |    90.91 |     100 |     100 |
-  index.js             |   98.18 |    90.91 |     100 |     100 | 17-40,43,66,81
+ src/debug             |   94.83 |    89.47 |     100 |      96 |
+  debug.js             |   94.83 |    89.47 |     100 |      96 | 63-64
  src/disable           |   90.32 |       75 |     100 |      90 |
-  index.js             |   90.32 |       75 |     100 |      90 | 81-83
- src/error             |     100 |       75 |     100 |     100 |
-  index.js             |     100 |       75 |     100 |     100 | 11-12
+  disable.js           |   90.32 |       75 |     100 |      90 | 83-85
+ src/json              |   92.59 |    88.46 |   77.78 |      94 |
+  ajax.js              |      85 |    92.31 |      75 |   84.21 | 53-54,62
+  json.js              |       0 |        0 |       0 |       0 |
+  json.mocks.js        |     100 |      100 |     100 |     100 |
+  promise.js           |    87.5 |      100 |   66.67 |     100 |
+  responder.js         |     100 |       75 |     100 |     100 | 20-21
  src/lang              |     100 |    96.67 |     100 |     100 |
   filterHTMLTags.js    |     100 |      100 |     100 |     100 |
-  getPropertySafely.js |     100 |    93.75 |     100 |     100 | 34
+  getPropertySafely.js |     100 |    93.75 |     100 |     100 | 33
   getStringSafely.js   |     100 |      100 |     100 |     100 |
-  index.js             |       0 |        0 |       0 |       0 |
-  isEmptyObject.js     |     100 |    91.67 |     100 |     100 | 13
+  isEmptyObject.js     |     100 |    91.67 |     100 |     100 | 14
   isEmptyString.js     |     100 |      100 |     100 |     100 |
   isNull.js            |     100 |      100 |     100 |     100 |
   isNullish.js         |     100 |      100 |     100 |     100 |
@@ -79,14 +80,15 @@ All files              |   97.28 |    90.21 |     100 |   97.67 |
   isType.js            |     100 |      100 |     100 |     100 |
   isUndefined.js       |     100 |      100 |     100 |     100 |
   isValidObject.js     |     100 |      100 |     100 |     100 |
+  lang.js              |       0 |        0 |       0 |       0 |
  src/tests             |     100 |      100 |     100 |     100 |
-  index.js             |     100 |      100 |     100 |     100 |
+  tests.js             |     100 |      100 |     100 |     100 |
 -----------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 4 passed, 4 total
-Tests:       47 passed, 47 total
+Test Suites: 5 passed, 5 total
+Tests:       57 passed, 57 total
 Snapshots:   0 total
-Time:        3.984 s
+Time:        3.962 s
 Ran all test suites.
 ```
 
