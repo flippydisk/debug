@@ -1,13 +1,13 @@
-@page Error
+@page Json
 @parent @flippydisk/tools
 
-# Error {Function}
+# Json {Suite}
 
 ## Overview
-The `error()` function is designed to provide a clean, optionally logged, error utilizing the
-[@flippydisk/tools/debug](https://github.com/flippydisk/tools/src/debug) feature. This is especially helpful when
-fetching items with Ajax calls that have failed, or "catching" errors gracefully that would otherwise halt the page
-progress.
+The `Json` suite aims to assist in handling JSON data, through various methods, and parse it into objects that are
+versatile and easily accessed. An ajax request, an ajax response errors json parsing are all essential to dynamic,
+information but can be a little cumbersome with only the browser tools alone. This suite aims to add to those features
+to assist with their ease of use.
 
 ## Importing and Instantiation
 Add `@flippydisk/tools` to your project. [@flippydisk/tools](https://github.com/flippydisk/tools) is in the NPM
@@ -20,23 +20,39 @@ manually to your `package.json` under the `dependencies{}` section:
 
 `"@flippydisk/tools": "git+ssh://git@github.com:flippydisk/tools.git"`
 
-Once it's in your project, simply Import the `error` function from @flippydisk/tools.
+Once it's in your project, simply Import the `responder` function from @flippydisk/tools.
 
 As a suite of tools:
-`import * as tools from '@flippydisk/tools';` // then use as `tools.error`
+`import * as Tools from '@flippydisk/tools';` // then use as `Tools.Json.responder`
 
 Or individually:
-`import error from '@flippydisk/tools/error';`
+`import Responder from '@flippydisk/tools/json/responder';`
+
+## Suite details
+### - ajax()
+The `ajax()` function is essentially a wrapper for `window.fetch` that sets a few of the defaults, to limit the
+repetitive nature of al the domain settings, and also handles error responses gracefully using `responder()`. It will
+return a JSON object or catch the error with `responder()`.
+
+### - promise()
+The `promise()` function is designed to provide resolve or reject method for a `Promise` that also gives you
+information, and a human-readable error message, that's optional to use in the data returned.
+
+### - responder()
+The `responder()` function is designed to provide a clean, optionally logged, error utilizing the
+[@flippydisk/tools/debug](https://github.com/flippydisk/tools/src/debug) feature. This is especially helpful when
+fetching items with Ajax calls that have failed, or "catching" errors gracefully that would otherwise halt the page
+progress.
 
 ## Use
-Setup the error logging object, then call `error` into your component. `message` is always required, but as it takes in an
+Setup the logging object, then call `Responder` into your component. `message` is always required, but as it takes in an
 `Object`, each param other than `message` is optional and will have a default.
 
 ### ex:
 ```
 if (thisTing === undefined) {
     const errorMessage = { message: 'You must define `thisTing`' };
-    return error(errorMessage);
+    return Responder(errorMessage);
 }
 ```
 
@@ -48,11 +64,11 @@ Object { errorDescriptor: "You must define `thisTing`", moreInfo: "general error
 And, if `Debug` is on, logs the error to the console with a stack trace:
 
 ```
-const debug = new Debug({ debug: true, control: 'Error' });
+const debug = new Debug({ debug: true, control: 'Responder' });
 
-error(errorMessage);
+Responder(errorMessage);
 
- Error: You must define `thisTing` general error debugger eval code:206:16
+ Responder: You must define `thisTing` general error debugger eval code:206:16
     printIt debugger eval code:206
     logFactory debugger eval code:101
     error debugger eval code:12
@@ -93,5 +109,5 @@ return window.fetch(endpoint, options)
       if (typeof cb === 'function') return cb(data);
       return data;
   })
-  .catch(errorMessage => error(errorMessage));
+  .catch(errorMessage => Responder(errorMessage));
 ```

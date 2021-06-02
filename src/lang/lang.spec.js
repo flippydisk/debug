@@ -1,4 +1,4 @@
-import * as Tests from '../tests';
+import * as Tests from '../tests/tests';
 import * as Lang from './lang';
 
 const allItems = {

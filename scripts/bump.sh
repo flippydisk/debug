@@ -67,7 +67,7 @@ echo "npm version $delim $params"
 npm version $delim $params
 git push upstream && git push --tags upstream
 LOCALFILE=./scripts/npm-release.sh
-REMOTEFILE=../node_modules/@flippydisk/ools/scripts/npm-release.sh
+REMOTEFILE=./node_modules/@flippydisk/tools/scripts/npm-release.sh
 if [ -f "$LOCALFILE" ];
 then
     cross-env $LOCALFILE

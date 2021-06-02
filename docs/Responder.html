@@ -3,8 +3,8 @@
 	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
 
 	INSTEAD CHANGE:
-	source: lib\error\index.js
-	@module error
+	source: src\json\responder.js
+	@function responder
 ######################################################################## -->
 
 <!--[if lt IE 7]>
@@ -24,7 +24,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>@flippydisk/tools  - error</title>
+	<title>@flippydisk/tools  - responder</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -82,10 +82,50 @@
 		
 			
 			<li class="search-container active">
-			<a class="sidebar-title" href="error.html" data-search="error">
-				error
+			<a class="sidebar-title" href="Json.html" data-search="Json">
+				Json
 			</a>
 			
+	<ul>
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="function" href="ajax.html" data-search="ajax">
+						ajax
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="function" href="promise.html" data-search="promise">
+						promise
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container active ">
+					<a class="function" href="responder.html" data-search="responder">
+						responder
+					</a>
+				</li>
+				
+			
+			
+		
+	</ul>
+
 		</li>
 			
 		
@@ -101,9 +141,9 @@
 		
 		<section class="title">
 			<div class="heading">
-<h1>error</h1>
+<h1>responder</h1>
 	<ul class="tags">
-		<li>module</li>
+		<li>function</li>
 	</ul>
 	
 	
@@ -111,8 +151,6 @@
 
 <div class="sub-heading">
 	
-	
-	<h2><code>{function()}</code></h2>
 	
 	<span class="inherits">&nbsp;</span>
 </div>
@@ -136,27 +174,89 @@
 
 		
 		<section class="description">
-			<p>a clean, optionally logged, error utilizing the Debug feature.</p>
+			<p>a clean Ajax response handler, optionally logged utilizing the Debug feature.</p>
 
 		</section>
 		
 
 		
 			
-			<section class='primary-options'>
-				
-
-  <h2 id="sig_">function()
+		
+		
+		
+			<section class="signature">
+				<h2 id="sig_">Json.responder(arguments)
 </h2>
 <div class="signature-wrapper">
+<p>a clean Ajax response handler, optionally logged utilizing the Debug feature.</p>
 
+
+	<h3>Parameters</h3>
+
+	<ol class="parameters">
+		
+		<li class="parameter">
+			<h4>arguments
+				<code>{Object}</code></h4>
+			<div class="description">
+				<p>Ajax response information to
+be logged. Only <code>message</code> is required, others are optional.</p>
+
+			</div>
+			
+			
+			<ul class="options">
+				
+				<li class="option">
+					<h5>status 
+						<code>{string}</code>
+					</h5>
+					<div class="description">
+						
+					</div>
+				</li>
+				
+				<li class="option">
+					<h5>statusText 
+						<code>{string}</code>
+					</h5>
+					<div class="description">
+						
+					</div>
+				</li>
+				
+				<li class="option">
+					<h5>message 
+						<code>{string}</code>
+					</h5>
+					<div class="description">
+						
+					</div>
+				</li>
+				
+				<li class="option">
+					<h5>rest 
+						<code>{any}</code>
+					</h5>
+					<div class="description">
+						
+					</div>
+				</li>
+				
+			</ul>
+			
+			
+		</li>
+		
+	</ol>
 
 
 	<h3>Returns</h3>
 	<div class="returns">
-		<h4><code>{undefined}</code></h4>
+		<h4><code>{function()}</code></h4>
 		<div class="description">
-			
+			<p>cb optional callback function</p>
+
 		</div>
 		
 		
@@ -169,12 +269,7 @@
 
 </div>
 
-  
-
 			</section>
-			
-		
-		
 		
 		
 
@@ -205,7 +300,7 @@
 	
 
 	<script type="text/javascript">
-		var docObject = {"src":"lib\\error\\index.js","line":4,"codeLine":10,"type":"module","description":"a clean, optionally logged, error utilizing the Debug feature.","name":"error","title":"","types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"parent":"","dest":"C:\\www\\projects\\Flippy\\tools\\docs","glob":{"pattern":"**/*.{js,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"C:\\www\\projects\\Flippy\\tools"},"generators":["html"],"page":"docs","docConfigDest":"../documentjs.json","project":{}};
+		var docObject = {"name":"responder","type":"function","parent":"Json","src":"src\\json\\responder.js","line":4,"codeLine":13,"description":"a clean Ajax response handler, optionally logged utilizing the Debug feature.","title":"","params":[{"types":[{"type":"Object","options":[{"name":"status","types":[{"type":"string"}]},{"name":"statusText","types":[{"type":"string"}]},{"name":"message","types":[{"type":"string"}]},{"name":"rest","types":[{"type":"any"}]}]}],"name":"arguments","description":"Ajax response information to\nbe logged. Only `message` is required, others are optional."}],"returns":{"types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"description":"cb optional callback function"},"dest":"C:\\www\\projects\\Flippy\\tools\\docs","glob":{"pattern":"**/*.{js,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"C:\\www\\projects\\Flippy\\tools"},"generators":["html"],"page":"docs","docConfigDest":"../documentjs.json","project":{}};
 	</script>
 
 	

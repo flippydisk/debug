@@ -1,4 +1,4 @@
-import * as Tests from './index';
+import * as Tests from './tests';
 
 const allItems = {
     function: [

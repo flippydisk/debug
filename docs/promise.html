@@ -3,8 +3,8 @@
 	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
 
 	INSTEAD CHANGE:
-	source: lib\error\index.js
-	@module error
+	source: src\json\promise.js
+	@function promise
 ######################################################################## -->
 
 <!--[if lt IE 7]>
@@ -24,7 +24,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>@flippydisk/tools  - error</title>
+	<title>@flippydisk/tools  - promise</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -82,10 +82,50 @@
 		
 			
 			<li class="search-container active">
-			<a class="sidebar-title" href="error.html" data-search="error">
-				error
+			<a class="sidebar-title" href="Json.html" data-search="Json">
+				Json
 			</a>
 			
+	<ul>
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="function" href="ajax.html" data-search="ajax">
+						ajax
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container active ">
+					<a class="function" href="promise.html" data-search="promise">
+						promise
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="function" href="responder.html" data-search="responder">
+						responder
+					</a>
+				</li>
+				
+			
+			
+		
+	</ul>
+
 		</li>
 			
 		
@@ -101,9 +141,9 @@
 		
 		<section class="title">
 			<div class="heading">
-<h1>error</h1>
+<h1>promise</h1>
 	<ul class="tags">
-		<li>module</li>
+		<li>function</li>
 	</ul>
 	
 	
@@ -111,8 +151,6 @@
 
 <div class="sub-heading">
 	
-	
-	<h2><code>{function()}</code></h2>
 	
 	<span class="inherits">&nbsp;</span>
 </div>
@@ -136,27 +174,83 @@
 
 		
 		<section class="description">
-			<p>a clean, optionally logged, error utilizing the Debug feature.</p>
+			<p>an Ajax error response handler. Internal to Json only.</p>
 
 		</section>
 		
 
 		
 			
-			<section class='primary-options'>
-				
-
-  <h2 id="sig_">function()
+		
+		
+		
+			<section class="signature">
+				<h2 id="sig_">Json.promise(signature, response, reject, false)
 </h2>
 <div class="signature-wrapper">
+<p>an Ajax error response handler. Internal to Json only.</p>
 
+
+	<h3>Parameters</h3>
+
+	<ol class="parameters">
+		
+		<li class="parameter">
+			<h4>signature
+				<code>{Object}</code></h4>
+			<div class="description">
+				<p>Error message setup info</p>
+
+			</div>
+			
+			
+			
+		</li>
+		
+		<li class="parameter">
+			<h4>response
+				<code>{function()}</code></h4>
+			<div class="description">
+				<p>AJax data that fetch got</p>
+
+			</div>
+			
+			
+			
+		</li>
+		
+		<li class="parameter">
+			<h4>reject
+				<code>{Boolean}</code></h4>
+			<div class="description">
+				<p>otherwise resolve</p>
+
+			</div>
+			
+			
+			
+		</li>
+		
+		<li class="parameter">
+			<h4>false
+				<code>{*}</code></h4>
+			<div class="description">
+				
+			</div>
+			
+			
+			
+		</li>
+		
+	</ol>
 
 
 	<h3>Returns</h3>
 	<div class="returns">
-		<h4><code>{undefined}</code></h4>
+		<h4><code>{Promise}</code></h4>
 		<div class="description">
-			
+			<p>A Promise resolution or rejection with the data, status</p>
+
 		</div>
 		
 		
@@ -169,12 +263,7 @@
 
 </div>
 
-  
-
 			</section>
-			
-		
-		
 		
 		
 
@@ -205,7 +294,7 @@
 	
 
 	<script type="text/javascript">
-		var docObject = {"src":"lib\\error\\index.js","line":4,"codeLine":10,"type":"module","description":"a clean, optionally logged, error utilizing the Debug feature.","name":"error","title":"","types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"parent":"","dest":"C:\\www\\projects\\Flippy\\tools\\docs","glob":{"pattern":"**/*.{js,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"C:\\www\\projects\\Flippy\\tools"},"generators":["html"],"page":"docs","docConfigDest":"../documentjs.json","project":{}};
+		var docObject = {"type":"function","name":"promise","params":[{"types":[{"type":"Object","options":[]}],"name":"signature","description":"Error message setup info"},{"types":[{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"name":"response","description":"AJax data that fetch got"},{"types":[{"type":"Boolean"}],"name":"reject","description":"otherwise resolve"},{"name":"false","types":[{"type":"*"}]}],"parent":"Json","src":"src\\json\\promise.js","line":0,"codeLine":10,"description":"an Ajax error response handler. Internal to Json only.","title":"","returns":{"types":[{"type":"Promise"}],"description":"A Promise resolution or rejection with the data, status"},"dest":"C:\\www\\projects\\Flippy\\tools\\docs","glob":{"pattern":"**/*.{js,md}","ignore":"{node_modules,bower_components}/**/*","cwd":"C:\\www\\projects\\Flippy\\tools"},"generators":["html"],"page":"docs","docConfigDest":"../documentjs.json","project":{}};
 	</script>
 
 	

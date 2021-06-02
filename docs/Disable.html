@@ -223,7 +223,7 @@ way of a URL parameter, or class instantiation setting.</p>
 <p>However, if you run into any issues, or simply want a &quot;main&quot; branch version, you can alternatively add this manually to your <code>package.json</code> under the <code>dependencies{}</code> section:</p>
 <p><code>&quot;@flippydisk/tools&quot;: &quot;git+ssh://git@github.com:flippydisk/tools.git&quot;</code></p>
 <p>Once it's in your project, simply Import the <code>Disabled</code> class from @flippydisk/tools.</p>
-<p><code>import * as tools from '@flippydisk/tools';</code></p>
+<p><code>import * as Tools from '@flippydisk/tools';</code></p>
 <p>Add a local instance of <code>Disabled</code> to your component by passing <code>Disabled()</code> an object
 containing the default value of <code>disabled</code> and a <code>control</code> name.</p>
 <p><code>const disabled = new tools.Disabled({ disabled: false, control: 'Carousel' });</code></p>

@@ -39,7 +39,7 @@
 		"import/extensions": ["error", "never"],
         "import/no-cycle": "off",
         "import/no-extraneous-dependencies": ["error", {
-            "devDependencies": ["**/tests/**", "**-tests.js", "test.js", "qunit"],
+            "devDependencies": ["**/tests/**", "**-tests.js", "test.js", "qunit", "**/*.spec.js"],
             "optionalDependencies": false,
             "peerDependencies": false,
             "packageDir": "./"
