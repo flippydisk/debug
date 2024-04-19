@@ -42,7 +42,7 @@ npm test
 ```
 $ npm run test
 
-> @flippydisk/tools@0.0.4 lint
+> @flippydisk/tools@1.0.1 lint
 > cross-env eslint ./src/**/*.js
 
  PASS  src/tests/tests.spec.js
@@ -53,11 +53,11 @@ $ npm run test
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   94.95 |    90.18 |   95.24 |   95.45 |
+All files              |   95.98 |    90.53 |   95.24 |   96.61 |
  src                   |       0 |        0 |       0 |       0 |
   index.js             |       0 |        0 |       0 |       0 |
- src/debug             |   94.83 |    89.47 |     100 |      96 |
-  debug.js             |   94.83 |    89.47 |     100 |      96 | 63-64
+ src/debug             |   98.31 |    90.48 |     100 |     100 |
+  debug.js             |   98.31 |    90.48 |     100 |     100 | 18-41,44,61,72,87
  src/disable           |   90.32 |       75 |     100 |      90 |
   disable.js           |   90.32 |       75 |     100 |      90 | 83-85
  src/json              |   92.59 |    88.46 |   77.78 |      94 |
